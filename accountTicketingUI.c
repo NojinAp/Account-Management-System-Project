@@ -1,10 +1,7 @@
 /*
-	==================================================
-	Account Management System Project
-	==================================================
-	Name   : Nozhin Azarpanah
-	Date   : November 14, 2021
-
+    ==================================================
+    Account Management System Project
+    ==================================================
 */
 
 #define _CRT_SECURE_NO_WARNINGS
