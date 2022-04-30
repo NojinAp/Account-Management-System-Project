@@ -2,9 +2,6 @@
     ==================================================
     Account Management System Project
     ==================================================
-    Name   : Nozhin Azarpanah
-    Date   : November 14, 2021
-
 */
 
 #ifndef ACCOUNTTICKETINGUI_H_
