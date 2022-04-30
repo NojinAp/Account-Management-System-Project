@@ -1,10 +1,7 @@
 /*
-	==================================================
-	Account Management System Project
-	==================================================
-	Name   : Nozhin Azarpanah
-	Date   : November 14, 2021
-
+    ==================================================
+    Account Management System Project
+    ==================================================
 */
 
 #ifndef ACCOUNT_H_
