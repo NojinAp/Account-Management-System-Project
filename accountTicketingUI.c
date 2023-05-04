@@ -84,11 +84,14 @@ int menuLogin(struct Account accounts[], int maxsize)
 			}
 			break;
 		case 1:
+		        char pass[99] = { 0 };
 			printf("\nEnter your account#: ");
 			accountNum = getPositiveInteger();
+			printf("\nEnter your password: ");
+			scanf("%s", pass);
 			for (i = 0; i < maxsize; i++)
 			{
-				if (accountNum == accounts[i].acc_num && accounts[i].acc_type == 'A')
+				if (accountNum == accounts[i].acc_num && accounts[i].acc_type == 'A' && strcmp(pass, accounts[i].password) == 0)
 				{
 					userindex = i;
 					printf("\n");
