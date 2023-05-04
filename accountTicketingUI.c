@@ -227,56 +227,6 @@ void menuAgent(struct Account accounts[], int maxsize, struct Account* useraccou
 	} while (flag == 1);
 }
 
-int findAccountIndexByAcctNum(int accountNum, const struct Account accounts[], int maxsize, int prompt) 
-{
-	int i;
-	int count = 0;
-	int index;
-	if (prompt == 0) 
-	{
-		for (i = 0; i < maxsize; i++) 
-		{
-			if (accountNum == accounts[i].acc_num) 
-			{
-				count += 1;
-				index = 1;
-			}
-		}
-		if (count == 1) 
-		{
-			return index;
-		}
-		else if (count != 1) 
-		{
-			index = -1;
-			printf("ERROR: Not Found.");
-		}
-	}
-	if (prompt != 0) 
-	{
-		printf("Enter the account#: ");
-		accountNum = getPositiveInteger();
-		for (i = 0; i < maxsize; i++) 
-		{
-			if (accountNum == accounts[i].acc_num) 
-			{
-				count += 1;
-				index = 1;
-			}
-		}
-		if (count == 1) 
-		{
-			return index;
-		}
-		else if (count != 1) 
-		{
-			index = -1;
-			return index;
-		}
-	}
-	return index;
-}
-
 void displayAllAccountDetailRecords(const struct Account accounts[], int maxsize) 
 {
 	int i;
