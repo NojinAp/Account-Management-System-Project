@@ -129,7 +129,7 @@ void menuAgent(struct Account accounts[], int maxsize, struct Account* useraccou
 		}
 		printf("AGENT: %s (%d)", useraccount->person.name, useraccount->acc_num);
 		printf("\n==============================================\nAccount Ticketing System - Agent Menu\n==============================================\n");
-		printf("1) Add a new account\n2) Modify an existing account\n3) Remove an account\n4) List accounts: detailed view\n----------------------------------------------\n0) Logout\n\n");
+		printf("1) Add a new account\n2) Modify an existing account\n3) Remove an account\n4) List accounts: detailed view\n0) Logout\n----------------------------------------------\n0) Logout\n\n");
 		printf("Selection: ");
 		int selection;
 		selection = getIntFromRange(0, 4);
